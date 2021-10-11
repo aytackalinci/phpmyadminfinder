@@ -26,98 +26,98 @@ do
 	
 	if [[ $(curl --connect-timeout 4 --max-time 4 -kLs "${SITE}/pma/" ) =~ 'pma_username' ]]; then
 		echo "[+] VULN: ${SITE}/pma/"
-		x++
+		let "x++"
 		else 
 		echo "NOT VULN: ${SITE}"
 	fi
 	
 	if [[ $(curl --connect-timeout 4 --max-time 4 -kLs "${SITE}/mysql/" ) =~ 'pma_username' ]]; then
 		echo "[+] VULN: ${SITE}/mysql/"
-		x++
+		let "x++"
 		else 
 		echo "NOT VULN: ${SITE}"
 	fi
 	
 	if [[ $(curl --connect-timeout 4 --max-time 4 -kLs "${SITE}/myadmin/" ) =~ 'pma_username' ]]; then
 		echo "[+] VULN: ${SITE}/myadmin/"
-		x++
+		let "x++"
 		else 
 		echo "NOT VULN: ${SITE}"
 	fi
 	
 	if [[ $(curl --connect-timeout 4 --max-time 4 -kLs "${SITE}/phpmyadmin2/" ) =~ 'pma_username' ]]; then
 		echo "[+] VULN: ${SITE}/phpmyadmin2/"
-		x++
+		let "x++"
 		else 
 		echo "NOT VULN: ${SITE}"
 	fi
 	
 	if [[ $(curl --connect-timeout 4 --max-time 4 -kLs "${SITE}/phpMyAdmin2/" ) =~ 'pma_username' ]]; then
 		echo "[+] VULN: ${SITE}/phpMyAdmin2/"
-		x++
+		let "x++"
 		else 
 		echo "NOT VULN: ${SITE}"
 	fi
 	
 	if [[ $(curl --connect-timeout 4 --max-time 4 -kLs "${SITE}/phpMyAdmin-2/" ) =~ 'pma_username' ]]; then
 		echo "[+] VULN: ${SITE}/phpMyAdmin-2/"
-		x++
+		let "x++"
 		else 
 		echo "NOT VULN: ${SITE}"
 	fi
 	
 	if [[ $(curl --connect-timeout 4 --max-time 4 -kLs "${SITE}/mysqladmin/" ) =~ 'pma_username' ]]; then
 		echo "[+] VULN: ${SITE}/mysqladmin/"
-		x++
+		let "x++"
 		else 
 		echo "NOT VULN: ${SITE}"
 	fi
 	
 	if [[ $(curl --connect-timeout 4 --max-time 4 -kLs "${SITE}/webdb/" ) =~ 'pma_username' ]]; then
 		echo "[+] VULN: ${SITE}/webdb/"
-		x++
+		let "x++"
 		else 
 		echo "NOT VULN: ${SITE}"
 	fi
 	
 	if [[ $(curl --connect-timeout 4 --max-time 4 -kLs "${SITE}/mysql-admin/" ) =~ 'pma_username' ]]; then
 		echo "[+] VULN: ${SITE}/mysql-admin/"
-		x++
+		let "x++"
 		else 
 		echo "NOT VULN: ${SITE}"
 	fi
 	
 	if [[ $(curl --connect-timeout 4 --max-time 4 -kLs "${SITE}/webdb/" ) =~ 'pma_username' ]]; then
 		echo "[+] VULN: ${SITE}/webdb/"
-		x++
+		let "x++"
 		else 
 		echo "NOT VULN: ${SITE}"
 	fi
 	
 	if [[ $(curl --connect-timeout 4 --max-time 4 -kLs "${SITE}/sqlmanager/" ) =~ 'pma_username' ]]; then
 		echo "[+] VULN: ${SITE}/sqlmanager/"
-		x++
+		let "x++"
 		else 
 		echo "NOT VULN: ${SITE}"
 	fi
 	
 	if [[ $(curl --connect-timeout 4 --max-time 4 -kLs "${SITE}/myadmin/" ) =~ 'pma_username' ]]; then
 		echo "[+] VULN: ${SITE}/myadmin/"
-		x++
+		let "x++"
 		else 
 		echo "NOT VULN: ${SITE}"
 	fi
 	
 	if [[ $(curl --connect-timeout 4 --max-time 4 -kLs "${SITE}/mysql/" ) =~ 'pma_username' ]]; then
 		echo "[+] VULN: ${SITE}/mysql/"
-		x++
+		let "x++"
 		else 
 		echo "NOT VULN: ${SITE}"
 	fi
 	
 	if [[ $(curl --connect-timeout 4 --max-time 4 -kLs "${SITE}/PMA/" ) =~ 'pma_username' ]]; then
 		echo "[+] VULN: ${SITE}/PMA/"
-		x++
+		let "x++"
 		else 
 		echo "NOT VULN: ${SITE}"
 		echo "VULN TOTAL : $x" 
